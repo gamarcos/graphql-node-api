@@ -1,5 +1,6 @@
 import { Server } from "http"
-import { AddressInfo } from "net";
+import { AddressInfo } from "dgram";
+
 export const normalizePort = (val: number | string): number | string | boolean => {
     let port: number = (typeof val === 'string') ? parseInt(val) : val
     if (isNaN(port)) return val
