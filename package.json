@@ -1,0 +1,42 @@
+{
+  "name": "graphql-node-api",
+  "version": "1.0.0",
+  "description": "Learn about GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development & nodemon --delay 5 dist/index",
+    "gulp": "node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamarcos/graphql-node-api.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "API"
+  ],
+  "author": "Gabriel Marcos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gamarcos/graphql-node-api/issues"
+  },
+  "homepage": "https://github.com/gamarcos/graphql-node-api#readme",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/express-graphql": "^0.6.1",
+    "@types/graphql": "^0.13.1",
+    "@types/node": "^10.5.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-typescript": "^5.0.0-alpha.2",
+    "nodemon": "^1.17.5",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.0.4",
+    "yarn": "^1.7.0"
+  }
+}
