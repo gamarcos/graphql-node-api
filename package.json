@@ -4,7 +4,7 @@
   "description": "Learn about GraphQL",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development & nodemon --delay 5 dist/index",
+    "dev": "cross-env NODE_ENV=development nodemon --delay 5 dist/index",
     "gulp": "node_modules/.bin/gulp"
   },
   "repository": {
@@ -38,6 +38,7 @@
     "@types/sequelize": "4.0.76",
     "chai": "4.1.2",
     "chai-http": "3.0.0",
+    "cross-env": "^5.2.0",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
     "gulp-typescript": "3.2.2",
