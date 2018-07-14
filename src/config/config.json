@@ -2,22 +2,25 @@
   "development": {
     "username": "root",
     "password": "qwerty",
-    "database": "database_development",
+    "database": "graphql_blog_development",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3306
   },
   "test": {
     "username": "root",
     "password": "qwerty",
-    "database": "database_test",
+    "database": "graphql_blog_development",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3306
   },
   "production": {
     "username": "root",
     "password": "qwerty",
-    "database": "database_production",
+    "database": "graphql_blog_development",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3306
   }
 }

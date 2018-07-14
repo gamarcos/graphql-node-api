@@ -2,7 +2,6 @@ import * as Sequelize from "sequelize"
 import { genSaltSync, hashSync, compareSync } from 'bcryptjs'
 
 import { BaseModelInterface } from "../interfaces/BaseModelInterface"
-import { userInfo } from "os";
 import { ModelsInterface } from "../interfaces/ModelsInterface";
 
 export interface UserAttributes {
@@ -49,8 +48,7 @@ export default (sequelize: Sequelize.Sequelize, DataTypes: Sequelize.DataTypes):
       type: DataTypes.BLOB({
         length: 'long'
       }),
-      allowNull: false,
-      defaultValue: null
+      allowNull: true
     }
   }, {
     tableName: 'users',

@@ -36,7 +36,7 @@ export default (Sequelize: Sequelize.Sequelize, DataTypes: Sequelize.DataTypes):
       type: DataTypes.BLOB({
         length: 'long'
       }),
-      allowNull: false,
+      allowNull: true
     }
   },{
     tableName: 'posts'
