@@ -1,34 +1,37 @@
 const postTypes = `
+
   type Post {
     id: ID!
     title: String!
     content: String!
-    photo: String
+    photo: String!
     createdAt: String!
-    updatedAt: String!
+    updated: String!
     author: User!
-    comments: [ Comment! ]
+    comments: [ Comment! ]!
   }
 
   input PostInput {
     title: String!
     content: String!
-    photo: String
-    author: User!
+    photo: String!
   }
+
 `
 
 const postQueries = `
-  posts(first: Int, offset: Int): [ Post! ]
+  posts(first: Int, offset: Int): [ Post! ]!
   post(id: ID!): Post
 `
-const postMutation = `
+
+const postMutations = `
   createPost(input: PostInput!): Post
   updatePost(id: ID!, input: PostInput!): Post
-  deletePost(id: ID!)
+  deletePost(id: ID!): Boolean
 `
+
 export {
   postTypes,
   postQueries,
-  postMutation
+  postMutations
 }

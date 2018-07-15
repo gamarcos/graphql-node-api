@@ -1,7 +1,8 @@
-const commentType = `
-  type Post {
+const commentTypes = `
+
+  type Comment {
     id: ID!
-    commnet: String!
+    comment: String!
     createdAt: String!
     updatedAt: String!
     user: User!
@@ -10,20 +11,23 @@ const commentType = `
 
   input CommentInput {
     comment: String!
-    post: Int!,
-    user: Int!
+    post: Int!
   }
+
 `
+
 const commentQueries = `
-  commentsByPost(post: ID!, first: Int, offset: Int): [ Comment! ]!
+  commentsByPost(postId: ID!, first: Int, offset: Int): [ Comment! ]!
 `
-const commentMutation = `
+
+const commentMutations = `
   createComment(input: CommentInput!): Comment
-  updatePost(id: ID!, input: CommentInput!): Comment
-  deletePost(id: ID!)
+  updateComment(id: ID!, input: CommentInput!): Comment
+  deleteComment(id: ID!): Boolean
 `
+
 export {
-  commentType,
+  commentTypes,
   commentQueries,
-  commentMutation
+  commentMutations
 }
