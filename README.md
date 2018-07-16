@@ -1,9 +1,9 @@
-# TypeScript e GraphQL
+# TypeScript, GraphQL and MySQL
 
 
 ## Todo 
  
- - List all comments
+ - List all user comments
  - Create user
  - implements JWT
  - List all posts
