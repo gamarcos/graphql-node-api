@@ -4,7 +4,7 @@
   "description": "Learn about GraphQL",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --delay 5 dist/index",
+    "dev": "cross-env NODE_ENV=development JWT_SECRET=iron_man nodemon --delay 5 dist/index",
     "gulp": "node_modules/.bin/gulp"
   },
   "repository": {
