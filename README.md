@@ -113,3 +113,8 @@ query getCommentsListByPost($postId: ID!, $first: Int, $offset: Int) {
 	}
 }
 ```
+
+##TODO LIST
+
+- Implements DataLoaders
+- Implements Tests
