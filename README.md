@@ -1,4 +1,4 @@
-# TypeScript, GraphQL and MySQL
+# TypeScript, GraphQL, JWT and MySQL
 
 ## Requirements
 
